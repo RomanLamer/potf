@@ -1,0 +1,177 @@
+.main{
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: rgba(0, 0, 0,0.8);
+    text-align: center;
+}
+.main > hr{
+    margin-left:7%;
+}
+.main_photo{
+    border: 0.2vw solid #fff;
+    margin-top: 2vw;
+    border-radius: 50%;
+    background-color: lightgray;
+    max-width: 15vw;
+    max-height: 15vw;
+}
+.timeline li {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 20px;
+}
+.main_underheader{
+    font-size: 2.5vw;
+    margin-left:7%;
+    color: #fff;
+    text-align: left;
+}
+hr{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    background-color: #9B9B9B;
+}
+.main_list{
+    margin: 10px 0 50px 10%;
+    text-align: left;
+}
+.list_item{
+    margin: 2.7vw;
+}
+.list_item-header{
+    color: #fff;
+    font-size: 2vw;
+}
+.list_item-descr{
+    color:  #D8D8D8;
+    font-size:1vw;
+
+}
+.content{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.content{
+    margin:  0 3%;
+}
+.content_header{
+    font-size:8.8vw ;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 700;
+}
+.header_descr{
+    font-weight: 400;
+    font-size: 2.5vw;
+    letter-spacing: 1.25vw;
+}
+.underheader{
+    margin:2vw 0;
+    font-weight: 500;
+    font-size: 3vw;
+}
+.timeline li:last-child {
+    padding-bottom: 0;
+}
+.timeline{
+    margin:0 10%;
+}
+.list_header{
+    font-weight: 600;
+    font-size: 1.6vw;
+}
+.list_descr{
+    color: gray;
+    font-size:1.2vw;
+}
+.timeline li::before,
+.timeline li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: calc(10% + (80px / 2) - 10px);
+    background-color: var(--dark);
+}
+
+.timeline li::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.timeline li::before {
+    width: 1px;
+    height: 100%;
+    margin-left: 4.5px;
+    background-color: lightgray;
+}
+
+.timeline li div:first-child {
+    text-align: right;
+    width: 10%;
+}
+
+.timeline li div:last-child {
+    width: calc(90% - 80px);
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills:last-child{
+    margin-right:15% ;
+}
+.skills_header{
+    letter-spacing: 0.4vw;
+    font-weight: 500;
+    font-size: 3vw;
+    margin:1.2vw 0;
+}
+.skill_info{
+    color: rgb(43, 43, 43);
+    font-weight: 500;
+}
+.pro > div,.personal > div{
+    margin:2.7vw 0;
+    font-size:1.7vw;
+}
+.personal{
+    margin-right: 15%;
+}
+.skills_info::before{
+    content: '';
+    display: block;
+    height: 0.7vw;
+    border-radius: 5px;
+    margin-top: 2.7vw;
+    width: 23vw;
+    background-color: lightgray;
+    position: absolute;
+}
+.skills_info::after{
+    content: '';
+    display: block;
+    height: 0.7vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    margin-top: 1.05vw;
+    width: 15vw;
+    background-color: black;
+    position: absolute;
+}
+.interests{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:50px;
+}
+.interests_item{
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    padding: 0.7vw 2vw;
+    font-size: 2vw;
+}
+.interests_item:not(:first-child){
+    margin: 0 0.7vw;
+}
